@@ -2,61 +2,105 @@
 
 
 /* Give the Header element a background color */
-
+header {
+   background-color: #367abb;
+   text-align: center;
+}
 
 /* Center Everything in Header  and footer */
-
+footer {
+  text-align: center;
+}
 
 /* All Text to Helvetica */
-
+body {
+  font-family: Helvetica;
+}
 
 /* All links colors gray*/
-
+a  {
+  color: gray;
+}
 
 /* All links hover color red*/
-
+a:hover {
+  color: red;
+}
 
 /* All Links Visted Color black*/
-
+a:visited {
+  color: black;
+}
 
 /*Footer Disclaimer Text to be .5 em*/
-
+footer {
+  font-size: .5em;
+}
 
 /* Remove Bullet Points from Header Navigation Links */
-
+header li {
+    list-style: none;
+}
 
 /* All Post's Comment Links Italicized, Orange and Remove the Underline */
-
+a[href$='comments'] {
+  text-decoration: none;
+  color: orange;
+  font-style: italic;
+}
 
 /* All Post's Comment Links Show Underline on Hover */
-
+a[href$='comments']:hover {
+  text-decoration: underline;
+}
 
 /* All Post's Author's Links Bold and Blue, with no Underline */
+ h3 a[href] {
+        text-decoration: none;
+        color: blue;
+        font-weight: bold;
+}
 
-
+}
 /* Article Paragraph Text should have line height of 200%*/
-
+article p {
+  line-height: 200%;
+}
 
 /* The First Letter of each Article be 2em */
-
+article h2:first-letter {
+  font-size: 2em;
+}
 
 /* The First Image in every Article should have Rounded Corners*/
-
+article img:first-of-type {
+         border-radius: 30%;
+}
 
 /* The Top-Most Top Cat Should have a Golden Background */
-
+#top-cats section:first-of-type {
+  background-color: gold;
+}
 
 /* The 2nd-Most Top Cat Should have a Silver/gray Background */
-
+#top-cats section:nth-child(3) {
+  background-color: silver;
+}
 
 /* The 3rd-Most Top Cat Should have a Bronze/brown Background */
-
+#top-cats section:nth-child(4) {
+  background-color: #cd7f32;
+}
 
 /* Every other Article's Post-Content Background Color to a Light Grey */
-
+article:nth-child(2n+2) {
+  background-color: lightgrey;
+}
 
 /* All Top Kitten's Profile Photos Rounded */
-
+#top-cats img {
+         border-radius: 30%;
+}
 
 /*** BONUS ***/
 
